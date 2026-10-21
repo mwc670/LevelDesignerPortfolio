@@ -89,6 +89,11 @@
             align-items: center;
         }
 
+        .hanging-indent {
+            padding-left: 36px;
+            text-indent: -36px;
+        }
+
         /* Smooth scroll anchor behavior */
         html {
             scroll-behavior: smooth;
@@ -98,15 +103,18 @@
 
 <body class="min-h-screen flex flex-col items-center px-4 py-8 md:py-16">
 
+    <!-- Full-Page Background Image with Opacity -->
+    <div class="fixed inset-0 bg-[url('images/BackgroundLogo.png')] bg-cover bg-center opacity-100 -z-10"></div>
+
     <!-- Header & Hero Section -->
-    <header class="w-full max-w-4xl text-center space-y-2 mb-4">
+    <header class="w-full max-w-5xl text-center space-y-2 mb-4">
         <!-- Main Title -->
-        <h1 class="stencil-title text-5xl md:text-7xl lg:text-8xl text-brand-accent tracking-wider">
+        <h1 class="stencil-title text-6xl md:text-8xl lg:text-9xl text-brand-accent tracking-wider">
             MATTHEW CAMPBELL
         </h1>
 
         <!-- Subtitle -->
-        <h2 class="font-bold text-4xl md:text-5xl lg:text-6xl text-white tracking-wide pt-1 pb-2">
+        <h2 class="font-bold text-5xl md:text-6xl lg:text-7xl text-slate-300 tracking-wide pt-1 pb-8">
             Level Designer
         </h2>
 
@@ -121,7 +129,8 @@
         </div>
 
         <!-- Introductory Bio Statement -->
-        <p class="max-w-4xl mx-auto text-base md:text-lg text-slate-100 font-normal leading-relaxed px-4 p-4">
+        <p
+            class="max-w-4xl mx-auto text-base md:text-xl text-slate-100 font-normal leading-relaxed px-4 p-4 transition-color hover:bg-black/50 rounded-xl">
             Below are four artifacts I have refined during my time at Southern New Hampshire University.
             These artifacts cater towards character driven experiences through 3D and 2D environments,
             utilizing Unreal Engine and Unity. This portfolio is consistently updated to show my latest works in
@@ -140,18 +149,18 @@
     </header>
 
     <!-- Navigation / Jump Bar -->
-    <nav class="flex flex-wrap justify-center gap-3 md:gap-6 mb-12 text-sm md:text-2xl font-semibold pt-2 pb-4">
+    <nav class="flex flex-wrap justify-center gap-3 md:gap-6 mb-12 text-sm md:text-2xl font-semibold pt-8 pb-4">
         <a href="#artifact-1"
-            class="px-4 py-2 rounded-full bg-brand-cardBg text-slate-300 border border-slate-700 hover:text-white transition">Blend
+            class="px-4 py-2 rounded-full bg-brand-cardBg/60 text-slate-300 border border-white-700 hover:text-white hover:bg-brand-cardBg/90 transition">Blend
             Out</a>
         <a href="#artifact-2"
-            class="px-4 py-2 rounded-full bg-brand-cardBg text-slate-300 border border-slate-700 hover:text-white transition">Drips
+            class="px-4 py-2 rounded-full bg-brand-cardBg/60 text-slate-300 border border-white-700 hover:text-white hover:bg-brand-cardBg/90 transition">Drips
             of Time</a>
         <a href="#artifact-3"
-            class="px-4 py-2 rounded-full bg-brand-cardBg text-slate-300 border border-slate-700 hover:text-white transition">Tiny
+            class="px-4 py-2 rounded-full bg-brand-cardBg/60 text-slate-300 border border-white-700 hover:text-white hover:bg-brand-cardBg/90 transition">Tiny
             View</a>
         <a href="#artifact-4"
-            class="px-4 py-2 rounded-full bg-brand-cardBg text-slate-300 border border-slate-700 hover:text-white transition">Willville</a>
+            class="px-4 py-2 rounded-full bg-brand-cardBg/60 text-slate-300 border border-white-700 hover:text-white hover:bg-brand-cardBg/90 transition">Willville</a>
     </nav>
 
     <!-- Main Artifacts Container -->
@@ -168,13 +177,13 @@
             </div>
 
             <!-- Project Main Title -->
-            <h4 class="text-3xl md:text-3xl lg:text-4xl font-extrabold text-white">
+            <h4 class="text-3xl md:text-3xl lg:text-4xl font-extrabold text-slate-50">
                 Blend Out: A Stealth Level Design
             </h4>
 
             <!-- Narrative Description -->
             <p
-                class="max-w-4xl mx-auto text-base md:text-lg text-slate-200 leading-relaxed font-normal text-left md:text-center px-2">
+                class="max-w-4xl mx-auto text-base md:text-xl text-slate-200 leading-relaxed font-normal text-left md:text-center px-2 hover:bg-black/50 rounded-xl">
                 This artifact is a refinement of one of my first ever projects made in Unreal Engine. My initial
                 inspiration for this project was to build a level focusing on a character's quick exit from a house
                 party. After combining some of my Blender work with assets from Synty Studios and ithappy, I was able to
@@ -186,7 +195,7 @@
             </p>
 
             <!-- Embedded Side-by-Side Video Showcase Container -->
-            <div class="pt-6">
+            <div class="pt-6 pb-6">
                 <h5 class="text-2xl font-semibold text-brand-accent mb-4 uppercase tracking-widest text-center">
                     Blend Out Side-by-Side
                 </h5>
@@ -221,19 +230,22 @@
                 </div>
             </div>
 
-            <!-- Key Highlights List for Level Design Competency -->
+            <!-- Key Highlights List for Blend Out -->
             <div
-                class="bg-brand-cardBg/60 border border-slate-700/60 rounded-xl p-6 text-left max-w-3xl mx-auto mt-8 space-y-3">
-                <h5 class="text-lg font-bold text-white mb-2 flex items-center gap-2">
-                    <span class="text-brand-accent">✦</span> Design Highlights
+                class="bg-brand-cardBg/60 border border-slate-700/90 rounded-xl p-3 text-left max-w-3xl mx-auto mt-6 space-y-3 hover:bg-brand-cardBg/90">
+                <h5 class="text-2xl font-bold text-white mb-2 flex items-center justify-center gap-2">
+                    <span class="text-brand-accent">✦</span> Design Highlights<span class="text-brand-accent">✦</span>
                 </h5>
-                <ul class="list-disc list-inside text-slate-300 space-y-2 text-sm md:text-base">
-                    <li><strong class="text-white">NPC Interactions:</strong> Improved NPC player awareness and sentinal
-                        features.</li>
+                <ul class="hanging-indent list-disc list-inside text-slate-300 space-y-2 text-md md:text-lg">
+                    <li><strong class="text-white">NPC Interactions:</strong> Improved NPC player awareness and sentinel
+                        features.
+                    </li>
                     <li><strong class="text-white">Scene Flow:</strong> Improved camera recognition for key events and
-                        update scene assets.</li>
+                        update scene assets.
+                    </li>
                     <li><strong class="text-white">Added Animations:</strong> Created NPC responses to aid in player
-                        awareness of sightlines.</li>
+                        awareness of sightlines.
+                    </li>
                 </ul>
             </div>
 
@@ -255,15 +267,15 @@
                     Artifact Two
                 </h3>
             </div>
-            <h4 class="text-3xl md:text-3xl lg:text-4xl font-extrabold text-white">
+            <h4 class="text-3xl md:text-3xl lg:text-4xl font-extrabold text-slate-50">
                 Drips of Time: A 2D Platformer Design
             </h4>
             <p
-                class="max-w-4xl mx-auto text-base md:text-lg text-slate-200 leading-relaxed font-normal text-left md:text-center px-2">
+                class="max-w-4xl mx-auto text-base md:text-xl text-slate-200 leading-relaxed font-normal text-left md:text-center px-2 hover:bg-black/50 rounded-xl">
                 My second artifact is a design that began several years ago as part of an online tutorial that I have
                 since developed into a concept I have always wanted to explore in more detail: a character that is able
+                to slips through time and enter multiple settings. I enjoy this idea because it allows me the creativity
                 to
-                slips through time and enter multiple settings. I enjoy this idea because it allows me the creativity to
                 blend multiple types of environments but still requires me to hold a solid story and design thread that
                 keeps everything connected. This level design leans on a "biome" type of organization, where certain
                 enemies and hazards have been made to fit their respective settings. As you will see in the original
@@ -276,13 +288,13 @@
             </p>
 
             <!-- Itch Embed Link-->
-            <div class="center-container pt-2">
+            <div class="center-container pt-6">
                 <iframe frameborder="0" src="https://itch.io/embed/4932776?border_width=5" width="560" height="175"><a
                         href="https://mwc670.itch.io/drips-of-time">Drips of Time by MWC</a></iframe>
             </div>
 
             <!-- Embedded Side-by-Side Video Showcase Container -->
-            <div class="pt-6">
+            <div class="pt-6 pb-6">
                 <h5 class="text-2xl font-semibold text-brand-accent mb-4 uppercase tracking-widest text-center">
                     Drips of Time Side-by-Side
                 </h5>
@@ -317,13 +329,13 @@
                 </div>
             </div>
 
-            <!-- Key Highlights List for Level Design Competency -->
+            <!-- Key Highlights List for Drips of Time -->
             <div
-                class="bg-brand-cardBg/60 border border-slate-700/60 rounded-xl p-6 text-left max-w-3xl mx-auto mt-8 space-y-3">
-                <h5 class="text-lg font-bold text-white mb-2 flex items-center gap-2">
-                    <span class="text-brand-accent">✦</span> Design Highlights
+                class="bg-brand-cardBg/60 border border-slate-700/90 rounded-xl p-3 text-left max-w-3xl mx-auto mt-8 space-y-3 hover:bg-brand-cardBg/90">
+                <h5 class="text-2xl font-bold text-white mb-2 flex items-center justify-center gap-2">
+                    <span class="text-brand-accent">✦</span> Design Highlights<span class="text-brand-accent">✦</span>
                 </h5>
-                <ul class="list-disc list-inside text-slate-300 space-y-2 text-sm md:text-base">
+                <ul class="hanging-indent list-disc list-inside text-slate-300 space-y-2 text-md md:text-lg">
                     <li><strong class="text-white">Environmental Storytelling: </strong> Allowing the art of the scene
                         to dictate to the player a significant portion of the information.</li>
                     <li><strong class="text-white">Risk/Reward Setup: </strong> Designing level pathways that provide
@@ -350,11 +362,11 @@
                     Artifact Three
                 </h3>
             </div>
-            <h4 class="text-3xl md:text-3xl lg:text-4xl font-extrabold text-white">
+            <h4 class="text-3xl md:text-3xl lg:text-4xl font-extrabold text-slate-50">
                 Little View: A 3D Cozy Puzzler
             </h4>
             <p
-                class="max-w-4xl mx-auto text-base md:text-lg text-slate-200 leading-relaxed font-normal text-left md:text-center px-2">
+                class="max-w-4xl mx-auto text-base md:text-xl text-slate-200 leading-relaxed font-normal text-left md:text-center px-2 hover:bg-black/50 rounded-xl">
                 My third artifact started as a simple GameJam project that has since blossomed into a short demo. My
                 focus for this artifact was to leverage elements of the game's environment as solutions for a few
                 cozy puzzles to demonstrate what I since learned about Unreal Engine's toolsets. The updated video shows
@@ -370,7 +382,7 @@
             </p>
 
             <!-- Embedded Side-by-Side Video Showcase Container -->
-            <div class="pt-6">
+            <div class="pt-6 pb-6">
                 <h5 class="text-2xl font-semibold text-brand-accent mb-4 uppercase tracking-widest text-center">
                     Little View Side-by-Side
                 </h5>
@@ -387,7 +399,7 @@
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
-                        <p class="text-xs text-slate-400 italic text-center">Updated Version of Little View Out</p>
+                        <p class="text-xs text-slate-400 italic text-center">Updated Version of Little View</p>
                     </div>
 
                     <!-- Video Embed 2 -->
@@ -405,13 +417,13 @@
                 </div>
             </div>
 
-            <!-- Key Highlights List for Level Design Competency -->
+            <!-- Key Highlights for Little View -->
             <div
-                class="bg-brand-cardBg/60 border border-slate-700/60 rounded-xl p-6 text-left max-w-3xl mx-auto mt-8 space-y-3">
-                <h5 class="text-lg font-bold text-white mb-2 flex items-center gap-2">
-                    <span class="text-brand-accent">✦</span> Design Highlights
+                class="bg-brand-cardBg/60 border border-slate-700/90 rounded-xl p-3 text-left max-w-3xl mx-auto mt-8 space-y-3 hover:bg-brand-cardBg/90">
+                <h5 class="text-2xl font-bold text-white mb-2 flex items-center justify-center gap-2">
+                    <span class="text-brand-accent">✦</span> Design Highlights<span class="text-brand-accent">✦</span>
                 </h5>
-                <ul class="list-disc list-inside text-slate-300 space-y-2 text-sm md:text-base">
+                <ul class="hanging-indent list-disc list-inside text-slate-300 space-y-2 text-md md:text-lg">
                     <li><strong class="text-white">Puzzle Construction:</strong> Using scene elements that require
                         player interaction to find solutions.</li>
                     <li><strong class="text-white">Visual Mapping:</strong> Using lighting and natural pathways to guide
@@ -439,11 +451,11 @@
                     Artifact Four
                 </h3>
             </div>
-            <h4 class="text-3xl md:text-3xl lg:text-4xl font-extrabold text-white">
+            <h4 class="text-3xl md:text-3xl lg:text-4xl font-extrabold text-slate-50">
                 Willville: A Narrative 3D Adventure
             </h4>
             <p
-                class="max-w-4xl mx-auto text-base md:text-lg text-slate-200 leading-relaxed font-normal text-left md:text-center px-2">
+                class="max-w-4xl mx-auto text-base md:text-xl text-slate-200 leading-relaxed font-normal text-left md:text-center px-2 hover:bg-black/50 rounded-xl">
                 Willville is a project that I started for Synty Game Jam that I have continued to iterate into a
                 narrative demo. This project was my first time using Pixel Crushers Dialogue Manager, and I wanted to
                 have a sample that showcase my ability to construct overlapping storylines. In Willville, I am able to
@@ -456,13 +468,13 @@
             </p>
 
             <!-- Itch Embed Link-->
-            <div class="center-container pt-2">
+            <div class="center-container pt-6">
                 <iframe frameborder="0" src="https://itch.io/embed/4612907?border_width=5" width="560" height="175"><a
                         href="https://mwc670.itch.io/willville-demo">Willville by MWC</a></iframe>
             </div>
 
             <!-- Embedded Side-by-Side Video Showcase Container -->
-            <div class="pt-6">
+            <div class="pt-6 pb-6">
                 <h5 class="text-2xl font-semibold text-brand-accent mb-4 uppercase tracking-widest text-center">
                     Willville Side-by-Side
                 </h5>
@@ -497,18 +509,21 @@
                 </div>
             </div>
 
-            <!-- Key Highlights List for Level Design Competency -->
+            <!-- Key Highlights List for Willville -->
             <div
-                class="bg-brand-cardBg/60 border border-slate-700/60 rounded-xl p-6 text-left max-w-3xl mx-auto mt-8 space-y-3">
-                <h5 class="text-lg font-bold text-white mb-2 flex items-center gap-2">
-                    <span class="text-brand-accent">✦</span> Design Highlights
+                class="bg-brand-cardBg/60 border border-slate-700/60 p-3 text-left max-w-3xl mx-auto mt-8 space-y-3 rounded-2xl hover:bg-brand-cardBg/90">
+                <h5 class="text-2xl font-bold text-white mb-2 flex items-center justify-center gap-2">
+                    <span class="text-brand-accent">✦</span> Design Highlights<span class="text-brand-accent">✦</span>
                 </h5>
-                <ul class="list-disc list-inside text-slate-300 space-y-2 text-sm md:text-base">
-                    <li><strong class="text-white">NPC Dialogue:</strong> Building responsive dialogue trees and barks
+                <ul class="hanging-indent list-disc list-inside text-slate-300 space-y-2 text-md md:text-lg">
+                    <li><strong class="text-white">NPC Dialogue:</strong> Building responsive dialogue
+                        trees and barks
                         to make the NPCs more aware of player actions.</li>
-                    <li><strong class="text-white">Minigame Design:</strong> Create engaging short game loops that
+                    <li><strong class="text-white">Minigame Design:</strong> Create engaging short game
+                        loops that
                         connect to key characters and build on story.</li>
-                    <li><strong class="text-white">Quest Tracking/UI:</strong> Construct a UI that updates the player on
+                    <li><strong class="text-white">Quest Tracking/UI:</strong> Construct a UI that
+                        updates the player on
                         quest progression and ultimate goal.</li>
                 </ul>
             </div>
