@@ -11,126 +11,38 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:ital,wght@0,300..900;1,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            bg: '#0a3a52',       // Deep Blue for Background
-                            accent: '#f37548',   // Vibrant for Headers and texts
-                            accentHover: '#e05d2e',
-                            divider: '#e3dfd7',  // Off-white for line breaks
-                            cardBg: '#082e42'    // Slightly darker contrast for cards
-                        }
-                    },
-                    fontFamily: {
-                        display: ['"Bangers"', 'Impact', 'sans-serif'],
-                        sans: ['"Montserrat"', 'system-ui', 'sans-serif'],
-                        heading: ['"Rubik"', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        /* Base Styling */
-        body {
-            background-color: #0a3a52;
-            color: #ffffff;
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-
-        /* Textured Title styling to match stencil look */
-        .stencil-title {
-            font-family: 'Bangers', cursive;
-            letter-spacing: 0.08em;
-            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
-            text-transform: uppercase;
-        }
-
-        /* SVG Brushed Divider Line Effect matching BREAKLINE.png */
-        .brush-divider {
-            width: 100%;
-            max-width: 475px;
-            margin: 2rem auto;
-            height: 24px;
-            background-color: transparent;
-        }
-
-        /* Responsive iframe container for side-by-side videos */
-        .video-embed-container {
-            position: relative;
-            width: 100%;
-            padding-top: 56.25%;
-            /* 16:9 Aspect Ratio */
-            background: #000;
-            border-radius: 0.5rem;
-            overflow: hidden;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
-        }
-
-        .video-embed-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-
-        .center-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .hanging-indent {
-            padding-left: 36px;
-            text-indent: -36px;
-        }
-
-        /* Smooth scroll anchor behavior */
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <link href="./dist/output.css" rel="stylesheet">
 </head>
 
-<body class="min-h-screen flex flex-col items-center px-4 py-8 md:py-16">
+<body class="min-h-screen flex flex-col items-center px-4 py-4 md:px-16 md:py-16">
 
-    <!-- Full-Page Background Image with Opacity -->
-    <div class="fixed inset-0 bg-[url('images/BackgroundLogo.png')] bg-cover bg-center opacity-100 -z-10"></div>
+    <!-- Full-Page Background Image-->
+    <div class="bg-background-logo"></div>
 
     <!-- Header & Hero Section -->
     <header class="w-full max-w-5xl text-center space-y-2 mb-4">
         <!-- Main Title -->
-        <h1 class="stencil-title text-6xl md:text-8xl lg:text-9xl text-brand-accent tracking-wider">
+        <h1 class="name-plate tracking-wider text-7xl md:text-8xl lg:text-9xl pt-12">
             MATTHEW CAMPBELL
         </h1>
 
         <!-- Subtitle -->
-        <h2 class="font-bold text-5xl md:text-6xl lg:text-7xl text-slate-300 tracking-wide pt-1 pb-8">
+        <h2 class="job-title text-5xl md:text-6xl lg:text-7xl tracking-wide pt-1 pb-2">
             Level Designer
         </h2>
 
         <!-- Custom Hand-drawn Brush Divider SVG matching BREAKLINE.png -->
-        <div class="brush-divider flex justify-center items-center py-2">
+        <div class="brush-divider flex justify-center items-center">
             <svg viewBox="0 0 600 30" fill="none" xmlns="http://www.w3.org/2000/svg"
                 class="w-full h-auto text-brand-divider">
                 <path
                     d="M 12 15 C 60 14.2, 160 11.5, 300 11 C 440 10.5, 540 13.5, 588 15 C 540 16.5, 440 19.5, 300 19 C 160 18.5, 60 15.8, 12 15 Z"
-                    fill="currentColor" />
+                    fill="white" />
             </svg>
         </div>
 
         <!-- Introductory Bio Statement -->
-        <p
-            class="max-w-4xl mx-auto text-base md:text-xl text-slate-100 font-normal leading-relaxed px-4 p-4 transition-color hover:bg-black/50 rounded-xl">
+        <p class="bio max-w-4xl mx-auto text-base md:text-xl leading-relaxed transition-color">
             Below are four artifacts I have refined during my time at Southern New Hampshire University.
             These artifacts cater towards character driven experiences through 3D and 2D environments,
             utilizing Unreal Engine and Unity. This portfolio is consistently updated to show my latest works in
@@ -138,29 +50,25 @@
         </p>
 
         <!-- Divider matching BREAKLINE.png -->
-        <div class="brush-divider flex justify-center items-center py-2 pb-2">
+        <div class="brush-divider flex justify-center items-center">
             <svg viewBox="0 0 600 30" fill="none" xmlns="http://www.w3.org/2000/svg"
                 class="w-full h-auto text-brand-divider">
                 <path
                     d="M 15 15 C 70 13.8, 180 11.2, 300 10.8 C 420 10.4, 530 13.6, 585 15 C 530 16.8, 420 19.8, 300 19.2 C 180 18.6, 70 16.2, 15 15 Z"
-                    fill="currentColor" />
+                    fill="white" />
             </svg>
         </div>
     </header>
 
     <!-- Navigation / Jump Bar -->
-    <nav class="flex flex-wrap justify-center gap-3 md:gap-6 mb-12 text-sm md:text-2xl font-semibold pt-8 pb-4">
-        <a href="#artifact-1"
-            class="px-4 py-2 rounded-full bg-brand-cardBg/60 text-slate-300 border border-white-700 hover:text-white hover:bg-brand-cardBg/90 transition">Blend
+    <nav class="flex flex-wrap justify-center gap-3 md:gap-6 mb-12 text-sm md:text-2xl font-semibold pt-2 pb-2">
+        <a href="#artifact-1" class="section-links section-links:hover">Blend
             Out</a>
-        <a href="#artifact-2"
-            class="px-4 py-2 rounded-full bg-brand-cardBg/60 text-slate-300 border border-white-700 hover:text-white hover:bg-brand-cardBg/90 transition">Drips
+        <a href="#artifact-2" class="section-links section-links:hover">Drips
             of Time</a>
-        <a href="#artifact-3"
-            class="px-4 py-2 rounded-full bg-brand-cardBg/60 text-slate-300 border border-white-700 hover:text-white hover:bg-brand-cardBg/90 transition">Tiny
+        <a href="#artifact-3" class="section-links section-links:hover">Tiny
             View</a>
-        <a href="#artifact-4"
-            class="px-4 py-2 rounded-full bg-brand-cardBg/60 text-slate-300 border border-white-700 hover:text-white hover:bg-brand-cardBg/90 transition">Willville</a>
+        <a href="#artifact-4" class="section-links section-links:hover">Willville</a>
     </nav>
 
     <!-- Main Artifacts Container -->
@@ -171,19 +79,19 @@
 
             <!-- Section Sub-Header -->
             <div class="inline-block border-b-2 border-brand-accent pb-1">
-                <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-accent tracking-wide">
+                <h3 class="text-3xl md:text-4xl lg:text-5xl tracking-wide">
                     Artifact One
                 </h3>
             </div>
 
             <!-- Project Main Title -->
-            <h4 class="text-3xl md:text-3xl lg:text-4xl font-extrabold text-slate-50">
+            <h4 class="text-3xl md:text-3xl lg:text-4xl">
                 Blend Out: A Stealth Level Design
             </h4>
 
             <!-- Narrative Description -->
             <p
-                class="max-w-4xl mx-auto text-base md:text-xl text-slate-200 leading-relaxed font-normal text-left md:text-center px-2 hover:bg-black/50 rounded-xl">
+                class="max-w-4xl mx-auto text-base md:text-xl text-slate-200 leading-relaxed font-normal text-left md:text-center px-2">
                 This artifact is a refinement of one of my first ever projects made in Unreal Engine. My initial
                 inspiration for this project was to build a level focusing on a character's quick exit from a house
                 party. After combining some of my Blender work with assets from Synty Studios and ithappy, I was able to
@@ -195,7 +103,7 @@
             </p>
 
             <!-- Embedded Side-by-Side Video Showcase Container -->
-            <div class="pt-6 pb-6">
+            <div class="side-by-side">
                 <h5 class="text-2xl font-semibold text-brand-accent mb-4 uppercase tracking-widest text-center">
                     Blend Out Side-by-Side
                 </h5>
@@ -231,9 +139,8 @@
             </div>
 
             <!-- Key Highlights List for Blend Out -->
-            <div
-                class="bg-brand-cardBg/60 border border-slate-700/90 rounded-xl p-3 text-left max-w-3xl mx-auto mt-6 space-y-3 hover:bg-brand-cardBg/90">
-                <h5 class="text-2xl font-bold text-white mb-2 flex items-center justify-center gap-2">
+            <div class="key-highlights key-highlights:hover text-left max-w-3xl mx-auto mt-6 space-y-3">
+                <h5 class="font-bold text-#fcf1dc text-2xl mb-2 flex items-center justify-center gap-2">
                     <span class="text-brand-accent">✦</span> Design Highlights<span class="text-brand-accent">✦</span>
                 </h5>
                 <ul class="hanging-indent list-disc list-inside text-slate-300 space-y-2 text-md md:text-lg">
@@ -251,27 +158,27 @@
 
         </section>
 
-        <div class="brush-divider flex justify-center items-center py-2">
+        <div class="brush-divider flex justify-center items-center">
             <svg viewBox="0 0 600 30" fill="none" xmlns="http://www.w3.org/2000/svg"
                 class="w-full h-auto text-brand-divider">
                 <path
                     d="M 12 15 C 60 14.2, 160 11.5, 300 11 C 440 10.5, 540 13.5, 588 15 C 540 16.5, 440 19.5, 300 19 C 160 18.5, 60 15.8, 12 15 Z"
-                    fill="currentColor" />
+                    fill="white" />
             </svg>
         </div>
 
         <!-- ARTIFACT TWO -->
         <section id="artifact-2" class="scroll-mt-8 space-y-6 text-center">
             <div class="inline-block border-b-2 border-brand-accent pb-1">
-                <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-accent tracking-wide">
+                <h3 class="text-3xl md:text-4xl lg:text-5xl tracking-wide">
                     Artifact Two
                 </h3>
             </div>
-            <h4 class="text-3xl md:text-3xl lg:text-4xl font-extrabold text-slate-50">
+            <h4 class="text-3xl md:text-3xl lg:text-4xl">
                 Drips of Time: A 2D Platformer Design
             </h4>
             <p
-                class="max-w-4xl mx-auto text-base md:text-xl text-slate-200 leading-relaxed font-normal text-left md:text-center px-2 hover:bg-black/50 rounded-xl">
+                class="max-w-4xl mx-auto text-base md:text-xl text-slate-200 leading-relaxed font-normal text-left md:text-center px-2">
                 My second artifact is a design that began several years ago as part of an online tutorial that I have
                 since developed into a concept I have always wanted to explore in more detail: a character that is able
                 to slips through time and enter multiple settings. I enjoy this idea because it allows me the creativity
@@ -294,7 +201,7 @@
             </div>
 
             <!-- Embedded Side-by-Side Video Showcase Container -->
-            <div class="pt-6 pb-6">
+            <div class="side-by-side">
                 <h5 class="text-2xl font-semibold text-brand-accent mb-4 uppercase tracking-widest text-center">
                     Drips of Time Side-by-Side
                 </h5>
@@ -330,9 +237,8 @@
             </div>
 
             <!-- Key Highlights List for Drips of Time -->
-            <div
-                class="bg-brand-cardBg/60 border border-slate-700/90 rounded-xl p-3 text-left max-w-3xl mx-auto mt-8 space-y-3 hover:bg-brand-cardBg/90">
-                <h5 class="text-2xl font-bold text-white mb-2 flex items-center justify-center gap-2">
+            <div class="key-highlights key-highlights:hover text-left max-w-3xl mx-auto mt-6 space-y-3">
+                <h5 class="text-2xl font-bold text-#fcf1dc mb-2 flex items-center justify-center gap-2">
                     <span class="text-brand-accent">✦</span> Design Highlights<span class="text-brand-accent">✦</span>
                 </h5>
                 <ul class="hanging-indent list-disc list-inside text-slate-300 space-y-2 text-md md:text-lg">
@@ -346,12 +252,12 @@
             </div>
         </section>
 
-        <div class="brush-divider flex justify-center items-center py-2">
+        <div class="brush-divider flex justify-center items-center">
             <svg viewBox="0 0 600 30" fill="none" xmlns="http://www.w3.org/2000/svg"
                 class="w-full h-auto text-brand-divider">
                 <path
                     d="M 15 15 C 70 13.8, 180 11.2, 300 10.8 C 420 10.4, 530 13.6, 585 15 C 530 16.8, 420 19.8, 300 19.2 C 180 18.6, 70 16.2, 15 15 Z"
-                    fill="currentColor" />
+                    fill="white" />
             </svg>
         </div>
 
@@ -362,11 +268,11 @@
                     Artifact Three
                 </h3>
             </div>
-            <h4 class="text-3xl md:text-3xl lg:text-4xl font-extrabold text-slate-50">
+            <h4 class="text-3xl md:text-3xl lg:text-4xl">
                 Little View: A 3D Cozy Puzzler
             </h4>
             <p
-                class="max-w-4xl mx-auto text-base md:text-xl text-slate-200 leading-relaxed font-normal text-left md:text-center px-2 hover:bg-black/50 rounded-xl">
+                class="max-w-4xl mx-auto text-base md:text-xl text-slate-200 leading-relaxed font-normal text-left md:text-center px-2">
                 My third artifact started as a simple GameJam project that has since blossomed into a short demo. My
                 focus for this artifact was to leverage elements of the game's environment as solutions for a few
                 cozy puzzles to demonstrate what I since learned about Unreal Engine's toolsets. The updated video shows
@@ -382,7 +288,7 @@
             </p>
 
             <!-- Embedded Side-by-Side Video Showcase Container -->
-            <div class="pt-6 pb-6">
+            <div class="side-by-side">
                 <h5 class="text-2xl font-semibold text-brand-accent mb-4 uppercase tracking-widest text-center">
                     Little View Side-by-Side
                 </h5>
@@ -418,9 +324,8 @@
             </div>
 
             <!-- Key Highlights for Little View -->
-            <div
-                class="bg-brand-cardBg/60 border border-slate-700/90 rounded-xl p-3 text-left max-w-3xl mx-auto mt-8 space-y-3 hover:bg-brand-cardBg/90">
-                <h5 class="text-2xl font-bold text-white mb-2 flex items-center justify-center gap-2">
+            <div class="key-highlights key-highlights:hover text-left max-w-3xl mx-auto mt-6 space-y-3">
+                <h5 class="text-2xl font-bold text-#fcf1dc mb-2 flex items-center justify-center gap-2">
                     <span class="text-brand-accent">✦</span> Design Highlights<span class="text-brand-accent">✦</span>
                 </h5>
                 <ul class="hanging-indent list-disc list-inside text-slate-300 space-y-2 text-md md:text-lg">
@@ -435,12 +340,12 @@
 
         </section>
 
-        <div class="brush-divider flex justify-center items-center py-2">
+        <div class="brush-divider flex justify-center items-center">
             <svg viewBox="0 0 600 30" fill="none" xmlns="http://www.w3.org/2000/svg"
                 class="w-full h-auto text-brand-divider">
                 <path
                     d="M 12 15 C 60 14.2, 160 11.5, 300 11 C 440 10.5, 540 13.5, 588 15 C 540 16.5, 440 19.5, 300 19 C 160 18.5, 60 15.8, 12 15 Z"
-                    fill="currentColor" />
+                    fill="white" />
             </svg>
         </div>
 
@@ -451,11 +356,11 @@
                     Artifact Four
                 </h3>
             </div>
-            <h4 class="text-3xl md:text-3xl lg:text-4xl font-extrabold text-slate-50">
+            <h4 class="text-3xl md:text-3xl lg:text-4xl">
                 Willville: A Narrative 3D Adventure
             </h4>
             <p
-                class="max-w-4xl mx-auto text-base md:text-xl text-slate-200 leading-relaxed font-normal text-left md:text-center px-2 hover:bg-black/50 rounded-xl">
+                class="max-w-4xl mx-auto text-base md:text-xl text-slate-200 leading-relaxed font-normal text-left md:text-center px-2">
                 Willville is a project that I started for Synty Game Jam that I have continued to iterate into a
                 narrative demo. This project was my first time using Pixel Crushers Dialogue Manager, and I wanted to
                 have a sample that showcase my ability to construct overlapping storylines. In Willville, I am able to
@@ -474,7 +379,7 @@
             </div>
 
             <!-- Embedded Side-by-Side Video Showcase Container -->
-            <div class="pt-6 pb-6">
+            <div class="side-by-side">
                 <h5 class="text-2xl font-semibold text-brand-accent mb-4 uppercase tracking-widest text-center">
                     Willville Side-by-Side
                 </h5>
@@ -510,9 +415,8 @@
             </div>
 
             <!-- Key Highlights List for Willville -->
-            <div
-                class="bg-brand-cardBg/60 border border-slate-700/60 p-3 text-left max-w-3xl mx-auto mt-8 space-y-3 rounded-2xl hover:bg-brand-cardBg/90">
-                <h5 class="text-2xl font-bold text-white mb-2 flex items-center justify-center gap-2">
+            <div class="key-highlights key-highlights:hover text-left max-w-3xl mx-auto mt-6 space-y-3">
+                <h5 class="text-2xl font-bold text-#fcf1dc mb-2 flex items-center justify-center gap-2">
                     <span class="text-brand-accent">✦</span> Design Highlights<span class="text-brand-accent">✦</span>
                 </h5>
                 <ul class="hanging-indent list-disc list-inside text-slate-300 space-y-2 text-md md:text-lg">

@@ -1,0 +1,150 @@
+    @import "tailwindcss";
+
+    @theme {
+        /* MWC Colors */
+        --color-brand-bg: #0a3a52;
+        --color-brand-accent: #f37548;
+        --color-brand-accent-hover: #e05d2e;
+        --color-brand-divider: #e3dfd7;
+        --color-brand-card-bg: #082e42;
+
+        /* Font Families */
+        --font-display: "Bangers", Impact, sans-serif;
+        --font-sans: "Montserrat", system-ui, sans-serif;
+        --font-heading: "Rubik", sans-serif;
+    }
+
+    /* Base Styling */
+    body {
+        background-color: #0a3a52;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    h3 {
+        font-weight: bold;
+        color: #f37548;
+        padding-top: 2rem;
+    }
+
+    h4 {
+        font-weight: bolder;
+        color: #e3dfd7;
+        padding-top: 0.5rem;
+    }
+
+    .bg-background-logo {
+        position: fixed;
+        background-image: url('../images/DarkLogoBackground.png');
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        opacity: 1;
+        z-index: -1;
+    }
+
+    /* Textured Name Title styling to match stencil look */
+    .name-plate {
+        font-family: 'Bangers', cursive;
+        letter-spacing: 0.08em;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+        text-transform: uppercase;
+        color: #f37548;
+    }
+
+    .job-title {
+        color: #fcf1dc;
+        font-weight: bold;
+    }
+
+    .bio {
+        color: #fefcfa;
+        font-weight: normal;
+    }
+
+    .section-links {
+        background-color: rgba(7, 51, 75, 0.25);
+        color: #cbd5e1;
+        transition: all 150ms ease-in-out;
+        border-radius: 9999px;
+        border: 1px solid #cbd5e1;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .section-links:hover {
+        background-color: rgba(7, 51, 75, 0.5);
+        color: #f37548;
+        border-color: #f37548;
+    }
+
+    .key-highlights {
+        background-color: rgba(10, 58, 82, 0.35);
+        transition: all 150ms ease-in-out;
+        border-radius: 5%;
+        border: 1px solid #000813;
+        padding: 0.75rem;
+    }
+
+    .key-highlights:hover {
+        background-color: #0a3a52e3;
+    }
+
+    .side-by-side {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    /* SVG Brushed Divider Line Effect matching BREAKLINE.png */
+    .brush-divider {
+        width: 100%;
+        max-width: 475px;
+        margin: 2rem auto;
+        height: 24px;
+        background-color: transparent;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    /* Responsive iframe container for side-by-side videos */
+    .video-embed-container {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%;
+        /* 16:9 Aspect Ratio */
+        background: #000;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-embed-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    .center-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hanging-indent {
+        padding-left: 36px;
+        text-indent: -36px;
+    }
+
+    /* Smooth scroll anchor behavior */
+    html {
+        scroll-behavior: smooth;
+    }
