@@ -26,13 +26,23 @@
 
     h3 {
         font-weight: bold;
-        color: #f37548;
+        background-image: linear-gradient(to bottom, #f37548, #a14f31);
+        /*Clip the background so it only stays behind the text letters */
+        -webkit-background-clip: text;
+        /* Required for Safari and older browsers */
+        background-clip: text;
+        color: transparent;
         padding-top: 2rem;
     }
 
     h4 {
         font-weight: bolder;
-        color: #e3dfd7;
+        background-image: linear-gradient(to bottom, #e3dfd7, #eee1c6);
+        /*Clip the background so it only stays behind the text letters */
+        -webkit-background-clip: text;
+        /* Required for Safari and older browsers */
+        background-clip: text;
+        color: transparent;
         padding-top: 0.5rem;
     }
 
@@ -49,16 +59,29 @@
 
     /* Textured Name Title styling to match stencil look */
     .name-plate {
-        font-family: 'Bangers', cursive;
-        letter-spacing: 0.08em;
-        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
-        text-transform: uppercase;
-        color: #f37548;
+        font-family: "Exo 2", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 550;
+        font-style: normal;
+        background-image: radial-gradient(#f37548, #6e3019);
+        /*Clip the background so it only stays behind the text letters */
+        -webkit-background-clip: text;
+        /* Required for Safari and older browsers */
+        background-clip: text;
+        color: transparent;
+        text-align: center;
     }
 
     .job-title {
-        color: #fcf1dc;
         font-weight: bold;
+        background-image: radial-gradient(#fcf1dc, #e9c98f);
+        /*Clip the background so it only stays behind the text letters */
+        -webkit-background-clip: text;
+        /* Required for Safari and older browsers */
+        background-clip: text;
+        color: transparent;
+        text-align: center;
+
     }
 
     .bio {
