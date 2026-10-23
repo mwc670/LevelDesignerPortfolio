@@ -22,26 +22,31 @@
     <div class="bg-background-logo"></div>
 
     <!-- Header & Hero Section -->
-    <header class="w-full max-w-5xl text-center space-y-2 mb-4">
+    <header class="header-background w-full max-text-w-5xl text-center space-y-2">
         <!-- Main Title -->
-        <h1 class="name-plate text-6xl md:text-7xl lg:text-8xl pt-12">
+        <h1 class="name-plate text-6xl md:text-7xl lg:text-8xl pt-6">
             MATTHEW CAMPBELL
         </h1>
 
         <!-- Subtitle -->
-        <h2 class="job-title text-5xl md:text-6xl lg:text-7xl pt-1 pb-2">
+        <h2 class="job-title text-5xl md:text-6xl lg:text-7xl pt-2 pb-8">
             Level Designer
         </h2>
+    </header>
 
-        <!-- Custom Hand-drawn Brush Divider SVG matching BREAKLINE.png -->
-        <div class="brush-divider flex justify-center items-center">
-            <svg viewBox="0 0 600 30" fill="none" xmlns="http://www.w3.org/2000/svg"
-                class="w-full h-auto text-brand-divider">
-                <path
-                    d="M 12 15 C 60 14.2, 160 11.5, 300 11 C 440 10.5, 540 13.5, 588 15 C 540 16.5, 440 19.5, 300 19 C 160 18.5, 60 15.8, 12 15 Z"
-                    fill="white" />
-            </svg>
-        </div>
+    <!-- Navigation / Jump Bar -->
+    <nav class="navigation-background flex flex-wrap justify-center gap-4 md:gap-8 mb-12 text-sm md:text-2xl">
+        <a href="#artifact-1" class="section-links section-links:hover">Blend
+            Out</a>
+        <a href="#artifact-2" class="section-links section-links:hover">Drips
+            of Time</a>
+        <a href="#artifact-3" class="section-links section-links:hover">Little
+            View</a>
+        <a href="#artifact-4" class="section-links section-links:hover">Willville</a>
+    </nav>
+
+    <!-- Main Artifacts Container -->
+    <main class="w-full max-w-5xl space-y-20">
 
         <!-- Introductory Bio Statement -->
         <p class="bio max-w-4xl mx-auto text-base md:text-xl leading-relaxed transition-color">
@@ -60,21 +65,6 @@
                     fill="white" />
             </svg>
         </div>
-    </header>
-
-    <!-- Navigation / Jump Bar -->
-    <nav class="flex flex-wrap justify-center gap-3 md:gap-6 mb-12 text-sm md:text-2xl font-semibold pt-2 pb-2">
-        <a href="#artifact-1" class="section-links section-links:hover">Blend
-            Out</a>
-        <a href="#artifact-2" class="section-links section-links:hover">Drips
-            of Time</a>
-        <a href="#artifact-3" class="section-links section-links:hover">Tiny
-            View</a>
-        <a href="#artifact-4" class="section-links section-links:hover">Willville</a>
-    </nav>
-
-    <!-- Main Artifacts Container -->
-    <main class="w-full max-w-5xl space-y-20">
 
         <!-- ARTIFACT ONE SECTION -->
         <section id="artifact-1" class="scroll-mt-8 space-y-6 text-center">
@@ -144,10 +134,10 @@
             <div class="key-highlights key-highlights:hover text-left max-w-3xl mx-auto mt-6 space-y-3">
                 <h5 class="font-bold text-#fcf1dc text-2xl mb-2 flex items-center justify-center gap-2">
                     <span class="text-brand-accent">✦</span>
-                    <span class="text-amber-50">Design Highlights</span>
+                    <span class="design">Design Highlights</span>
                     <span class="text-brand-accent">✦</span>
                 </h5>
-                <ul class="hanging-indent list-disc list-inside text-slate-300 space-y-2 text-md md:text-lg">
+                <ul class="hanging-indent list-disc list-inside space-y-2 text-md md:text-lg">
                     <li><strong class="text-white">NPC Interactions:</strong> Improved NPC player awareness and sentinel
                         features.
                     </li>
@@ -186,16 +176,15 @@
                 My second artifact is a design that began several years ago as part of an online tutorial that I have
                 since developed into a concept I have always wanted to explore in more detail: a character that is able
                 to slips through time and enter multiple settings. I enjoy this idea because it allows me the creativity
-                to
-                blend multiple types of environments but still requires me to hold a solid story and design thread that
-                keeps everything connected. This level design leans on a "biome" type of organization, where certain
-                enemies and hazards have been made to fit their respective settings. As you will see in the original
-                video, I started with only one enemy from this lesson that did not attack or chase the player, and two
-                hazards that looked the same throughout each iteration. Since refinement began, I have added in more
-                enemies that pose actual threats to the player, whether that be through tracking and speed, or via
+                to blend multiple types of environments but still requires me to hold a solid story and design thread
+                that keeps everything connected. This level design leans on a "biome" type of organization, where
+                certain enemies and hazards have been made to fit their respective settings. As you will see in the
+                original video, I started with only one enemy from this lesson that did not attack or chase the player,
+                and two hazards that looked the same throughout each iteration. Since refinement began, I have added in
+                more enemies that pose actual threats to the player, whether that be through tracking and speed, or via
                 long-range attacks. I have also added in more hazards, like a lava splash, that draws upon the different
                 tile patterns. The result is a more expansive experience for the player that better expresses the
-                storline through the environment.
+                storyline through the environment.
             </p>
 
             <!-- Itch Embed Link-->
@@ -244,10 +233,10 @@
             <div class="key-highlights key-highlights:hover text-left max-w-3xl mx-auto mt-6 space-y-3">
                 <h5 class="text-2xl font-bold text-#fcf1dc mb-2 flex items-center justify-center gap-2">
                     <span class="text-brand-accent">✦</span>
-                    <span class="text-amber-50">Design Highlights</span>
+                    <span class="design">Design Highlights</span>
                     <span class="text-brand-accent">✦</span>
                 </h5>
-                <ul class="hanging-indent list-disc list-inside text-slate-300 space-y-2 text-md md:text-lg">
+                <ul class="hanging-indent list-disc list-inside space-y-2 text-md md:text-lg">
                     <li><strong class="text-white">Environmental Storytelling: </strong> Allowing the art of the scene
                         to dictate to the player a significant portion of the information.</li>
                     <li><strong class="text-white">Risk/Reward Setup: </strong> Designing level pathways that provide
@@ -333,10 +322,10 @@
             <div class="key-highlights key-highlights:hover text-left max-w-3xl mx-auto mt-6 space-y-3">
                 <h5 class="text-2xl font-bold text-#fcf1dc mb-2 flex items-center justify-center gap-2">
                     <span class="text-brand-accent">✦</span>
-                    <span class="text-amber-50">Design Highlights</span>
+                    <span class="design">Design Highlights</span>
                     <span class="text-brand-accent">✦</span>
                 </h5>
-                <ul class="hanging-indent list-disc list-inside text-slate-300 space-y-2 text-md md:text-lg">
+                <ul class="hanging-indent list-disc list-inside space-y-2 text-md md:text-lg">
                     <li><strong class="text-white">Puzzle Construction:</strong> Using scene elements that require
                         player interaction to find solutions.</li>
                     <li><strong class="text-white">Visual Mapping:</strong> Using lighting and natural pathways to guide
@@ -426,10 +415,10 @@
             <div class="key-highlights key-highlights:hover text-left max-w-3xl mx-auto mt-6 space-y-3">
                 <h5 class="text-2xl font-bold text-#fcf1dc mb-2 flex items-center justify-center gap-2">
                     <span class="text-brand-accent">✦</span>
-                    <span class="text-amber-50">Design Highlights</span>
+                    <span class="design">Design Highlights</span>
                     <span class="text-brand-accent">✦</span>
                 </h5>
-                <ul class="hanging-indent list-disc list-inside text-slate-300 space-y-2 text-md md:text-lg">
+                <ul class="hanging-indent list-disc list-inside space-y-2 text-md md:text-lg">
                     <li><strong class="text-white">NPC Dialogue:</strong> Building responsive dialogue
                         trees and barks
                         to make the NPCs more aware of player actions.</li>

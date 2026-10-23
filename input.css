@@ -17,11 +17,24 @@
     /* Base Styling */
     body {
         background-color: #0a3a52;
-        color: #ffffff;
+        color: rgba(238, 236, 231, .95);
         font-family: 'Montserrat', sans-serif;
         margin: 0;
         padding: 0;
         overflow-x: hidden;
+    }
+
+    p {
+        color: rgba(238, 236, 231, .95);
+        padding: 1rem;
+    }
+
+    p:hover {
+        color: rgba(238, 236, 231, .95);
+        background-color: rgba(0, 0, 2, .65);
+        padding: 1rem;
+        transition: all 150ms ease-in-out;
+
     }
 
     h3 {
@@ -37,7 +50,7 @@
 
     h4 {
         font-weight: bolder;
-        background-image: linear-gradient(to bottom, #e3dfd7, #eee1c6);
+        background-image: linear-gradient(to bottom, hsl(39, 18%, 75%), hsl(40, 54%, 75%));
         /*Clip the background so it only stays behind the text letters */
         -webkit-background-clip: text;
         /* Required for Safari and older browsers */
@@ -46,15 +59,29 @@
         padding-top: 0.5rem;
     }
 
+    .header-background {
+        z-index: -1;
+        background-color: rgba(3, 25, 36, 0.8);
+        width: 100vw;
+
+    }
+
+    .navigation-background {
+        background-color: rgba(10, 58, 82, 0.80);
+        font-weight: normal;
+        padding: 1.25rem 3rem;
+        width: 100vw;
+    }
+
     .bg-background-logo {
         position: fixed;
         background-image: url('../images/DarkLogoBackground.png');
         width: 100vw;
         height: 100vh;
-        background-size: cover;
         background-position: center;
+        background-size: cover;
         opacity: 1;
-        z-index: -1;
+        z-index: -5;
     }
 
     /* Textured Name Title styling to match stencil look */
@@ -74,7 +101,7 @@
 
     .job-title {
         font-weight: bold;
-        background-image: radial-gradient(#fcf1dc, #e9c98f);
+        background-image: radial-gradient(hsla(39, 84%, 93%, 0.675), hsla(39, 67%, 74%, 0.675));
         /*Clip the background so it only stays behind the text letters */
         -webkit-background-clip: text;
         /* Required for Safari and older browsers */
@@ -87,10 +114,12 @@
     .bio {
         color: #fefcfa;
         font-weight: normal;
+        font-style: oblique;
+        text-align: center;
     }
 
     .section-links {
-        background-color: rgba(7, 51, 75, 0.25);
+        background-color: rgba(7, 51, 75, 0.1);
         color: #cbd5e1;
         transition: all 150ms ease-in-out;
         border-radius: 9999px;
@@ -102,7 +131,7 @@
     }
 
     .section-links:hover {
-        background-color: rgba(7, 51, 75, 0.5);
+        background-color: rgba(7, 51, 75, 0.2);
         color: #f37548;
         border-color: #f37548;
     }
@@ -119,6 +148,10 @@
         background-color: #0a3a52e3;
     }
 
+    .design {
+        color: hsl(40, 54%, 75%);
+    }
+
     .side-by-side {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
@@ -127,12 +160,12 @@
     /* SVG Brushed Divider Line Effect matching BREAKLINE.png */
     .brush-divider {
         width: 100%;
-        max-width: 475px;
+        max-width: 650px;
         margin: 2rem auto;
-        height: 24px;
+        height: 18px;
         background-color: transparent;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     /* Responsive iframe container for side-by-side videos */
@@ -165,6 +198,7 @@
     .hanging-indent {
         padding-left: 36px;
         text-indent: -36px;
+        color: #e3dfd7;
     }
 
     /* Smooth scroll anchor behavior */
