@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="./dist/output.css" rel="stylesheet">
+    <script src="./navigation.js" defer></script>
 </head>
 
 
@@ -32,14 +33,38 @@
         </h2>
     </header>
 
-    <!-- Navigation Bar -->
+    <!--Nav Bar-->
     <nav class="navigation-background flex flex-wrap justify-center gap-4 md:gap-8 pb-2 text-sm md:text-2xl">
-        <a href="./Willville.html" class="section-links section-links:hover">Willville</a>
-        <a href="./LittleView.html" class="section-links section-links:hover">Little
-            View</a>
-        <a href="./DripsOfTime.html" class="section-links section-links:hover">Drips of Time</a>
-        <a href="./BlendOut.html" class="section-links section-links:hover">Blend
-            Out</a>
+        <!-- Dropdown Container using a class -->
+        <div class="projects-dropdown relative inline-block">
+
+            <!-- Dropdown Trigger Button -->
+            <button type="button" onclick="toggleProjectsMenu(event)"
+                class="section-links section-links:hover flex items-center gap-1 cursor-pointer focus:outline-none">
+                Projects
+                <!-- Arrow Icon pointing down -->
+                <svg class="projects-arrow w-4 h-4 md:w-6 md:h-6 transition-transform duration-200" fill="none"
+                    stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+
+            <!-- Expanded Menu Downward -->
+            <div
+                class="projects-menu absolute left-1/2 -translate-x-1/2 top-full mt-2 hidden flex-col shadow-xl rounded-lg py-2 min-w-[180px] z-50 space-y-2 drop-down bg-white border border-gray-100">
+                <a href="./Willville.html"
+                    class="px-4 py-2 section-links section-links:hover text-sm md:text-xl text-center">Willville</a>
+                <a href="./LittleView.html"
+                    class="px-4 py-2 section-links section-links:hover text-sm md:text-xl text-center">Little
+                    View</a>
+                <a href="./DripsOfTime.html"
+                    class="px-4 py-2 section-links section-links:hover text-sm md:text-xl text-center">Drips
+                    of Time</a>
+                <a href="./BlendOut.html"
+                    class="px-4 py-2 section-links section-links:hover text-sm md:text-xl text-center">Blend
+                    Out</a>
+            </div>
+        </div>
     </nav>
 
     <div class="grid grid-cols-1 md:grid-cols-4 min-h-screen w-full">
@@ -68,7 +93,7 @@
                     <!-- Side-by-Side Flex Grid for YouTube Embeds -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
                         <!-- Video Embed 1 -->
-                        <div class="space-2">
+                        <div class="space-2 pt-2">
                             <p class="video-titles text-xs text-slate-400 italic text-center">Updated Version of
                                 Willville</p>
                             <div class="video-embed-container">
@@ -80,7 +105,7 @@
                             </div>
                         </div>
                         <!-- Video Embed 2 -->
-                        <div class="space-2">
+                        <div class="space-2 pt-2">
                             <p class="video-titles text-xs text-slate-400 italic text-center">Updated Version of Little
                                 View</p>
                             <div class="video-embed-container">
@@ -96,7 +121,7 @@
                     <!-- Side-by-Side Flex Grid for YouTube Embeds Part 2 -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
                         <!-- Video Embed 3 -->
-                        <div class="space-2">
+                        <div class="space-2 pt-2">
                             <p class="video-titles text-xs text-slate-400 italic text-center">Updated Version of Drips
                                 of Time
                             </p>
@@ -109,9 +134,12 @@
                             </div>
                         </div>
                         <!-- Video Embed 4 -->
-                        <div class="space-2">
-                            <p class="video-titles text-xs text-slate-400 italic text-center">Updated Version of Blend
-                                Out</p>
+                        <div class="space-2 pt-2">
+                            <div class="w-full text-center">
+                                <h6 class="video-titles text-xs text-slate-400 italic text-center">Updated Version of
+                                    Blend
+                                    Out</h6>
+                            </div>
                             <div class="video-embed-container">
                                 <iframe width="560" height="315"
                                     src="https://www.youtube.com/embed/rwI4NBOWYro?si=PwQ_OvmddK_leGPp"

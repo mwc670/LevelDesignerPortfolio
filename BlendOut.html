@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="./dist/output.css" rel="stylesheet">
+    <script src="./navigation.js" defer></script>
 </head>
 
 <body class="min-h-screen flex flex-col items-center px-4 py-4 md:px-16 md:py-16 bg-background-image">
@@ -30,7 +31,36 @@
     <!-- Navigation / Jump Bar -->
     <nav class="navigation-background flex flex-wrap justify-center gap-4 md:gap-8 text-sm md:text-2xl">
         <a href="./index.html" class="section-links section-links:hover">Main Page</a>
-        <a href="#Title" class="section-links section-links:hover">Blend Out</a>
+        <!-- Dropdown Container using a class -->
+        <div class="projects-dropdown relative inline-block">
+
+            <!-- Dropdown Trigger Button -->
+            <button type="button" onclick="toggleProjectsMenu(event)"
+                class="section-links section-links:hover flex items-center gap-1 cursor-pointer focus:outline-none">
+                Projects
+                <!-- Arrow Icon pointing down -->
+                <svg class="projects-arrow w-4 h-4 md:w-6 md:h-6 transition-transform duration-200" fill="none"
+                    stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+
+            <!-- Expanded Menu Downward -->
+            <div
+                class="projects-menu absolute left-1/2 -translate-x-1/2 top-full mt-2 hidden flex-col shadow-xl rounded-lg py-2 min-w-[180px] z-50 space-y-2 drop-down bg-white border border-gray-100">
+                <a href="./Willville.html"
+                    class="px-4 py-2 section-links section-links:hover text-sm md:text-xl text-center">Willville</a>
+                <a href="./LittleView.html"
+                    class="px-4 py-2 section-links section-links:hover text-sm md:text-xl text-center">Little
+                    View</a>
+                <a href="./DripsOfTime.html"
+                    class="px-4 py-2 section-links section-links:hover text-sm md:text-xl text-center">Drips
+                    of Time</a>
+                <a href="./BlendOut.html"
+                    class="px-4 py-2 section-links section-links:hover text-sm md:text-xl text-center">Blend
+                    Out</a>
+            </div>
+        </div>
     </nav>
 
     <div class="grid grid-cols-1 md:grid-cols-4 min-h-screen w-full">

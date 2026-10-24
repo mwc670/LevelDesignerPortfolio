@@ -127,6 +127,11 @@
         width: 100vw;
     }
 
+    .drop-down {
+        background-color: rgba(1, 10, 15, 0.8);
+        border: 0.5px solid rgba(10, 58, 82, 0.3);
+    }
+
     .section-links {
         background-color: rgba(1, 10, 15, 0.8);
         color: hsla(40, 54%, 75%, 1);
@@ -190,9 +195,8 @@
 
     .video-titles {
         background-color: rgba(0, 12, 18, 1);
-        border: 1px solid rgba(0, 12, 18, 1);
-        padding: 0.40rem 1.5rem;
-        width: fit-content;
+        color: #e3dfd7;
+        padding: 0.4rem 1rem;
     }
 
     .design {
