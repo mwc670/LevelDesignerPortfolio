@@ -24,17 +24,16 @@
         overflow-x: hidden;
     }
 
+    img,
+    video {
+        max-width: 95%;
+        height: auto;
+    }
+
+
     p {
         color: rgba(238, 236, 231, .95);
         padding: 1rem;
-    }
-
-    p:hover {
-        color: rgba(238, 236, 231, .95);
-        background-color: rgba(0, 0, 2, .65);
-        padding: 1rem;
-        transition: all 150ms ease-in-out;
-
     }
 
     h3 {
@@ -59,34 +58,12 @@
         padding-top: 0.5rem;
     }
 
-    .header-background {
-        z-index: -1;
+    .main-color-background {
         background-color: rgba(3, 25, 36, 0.8);
-        width: 100vw;
-
-    }
-
-    .navigation-background {
-        background-color: rgba(10, 58, 82, 0.80);
-        font-weight: normal;
-        padding: 1.25rem 3rem;
-        width: 100vw;
-    }
-
-    .bg-background-logo {
-        position: fixed;
-        background-image: url('../images/DarkLogoBackground.png');
-        width: 100vw;
-        height: 100vh;
-        background-position: center;
-        background-size: cover;
-        opacity: 1;
-        z-index: -5;
     }
 
     /* Textured Name Title styling to match stencil look */
     .name-plate {
-        font-family: "Exo 2", sans-serif;
         font-optical-sizing: auto;
         font-weight: 550;
         font-style: normal;
@@ -108,7 +85,6 @@
         background-clip: text;
         color: transparent;
         text-align: center;
-
     }
 
     .bio {
@@ -118,12 +94,45 @@
         text-align: center;
     }
 
+    .artifact-title {
+        font-weight: bold;
+        background-image: linear-gradient(to bottom, hsla(39, 91%, 82%, 0.85), hsla(39, 82%, 74%, 0.80));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-align: center;
+    }
+
+    .current-projects {
+        font-weight: bold;
+        background-image: linear-gradient(to bottom, hsla(39, 91%, 82%, 0.85), hsla(39, 58%, 63%, 0.8));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-align: center;
+        text-decoration-line: underline;
+    }
+
+    .header-background {
+        z-index: -1;
+        background-color: rgba(3, 25, 36, 0.8);
+        width: 100vw;
+        padding: 0.75rem;
+    }
+
+    .navigation-background {
+        background-color: rgba(1, 10, 15, 0.8);
+        font-weight: normal;
+        padding: 1.25rem 3rem;
+        width: 100vw;
+    }
+
     .section-links {
-        background-color: rgba(7, 51, 75, 0.1);
-        color: #cbd5e1;
+        background-color: rgba(1, 10, 15, 0.8);
+        color: hsla(40, 54%, 75%, 1);
         transition: all 150ms ease-in-out;
         border-radius: 9999px;
-        border: 1px solid #cbd5e1;
+        border: 1px solid hsla(40, 54%, 75%, 1);
         padding-left: 1rem;
         padding-right: 1rem;
         padding-top: 0.5rem;
@@ -131,21 +140,59 @@
     }
 
     .section-links:hover {
-        background-color: rgba(7, 51, 75, 0.2);
+        background-color: rgba(1, 10, 15, 0.9);
         color: #f37548;
         border-color: #f37548;
+        transition: all 150ms ease-in-out;
+    }
+
+    .bg-background-logo {
+        background-image: url('../images/DarkLogoBackground.png');
+        background-position: top;
+        background-size: contain;
+        background-repeat: repeat;
+        opacity: 1;
+        z-index: -5;
+    }
+
+    .bg-background-image {
+        background-image: url('../images/MyBlue.png');
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        height: 100%;
+        opacity: 1;
+        z-index: -10;
+    }
+
+    .reflection-background {
+        position: fixed;
+        background-image: url('../images/DarkLogoBackground.png');
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        opacity: 1;
+        z-index: -5;
     }
 
     .key-highlights {
         background-color: rgba(10, 58, 82, 0.35);
         transition: all 150ms ease-in-out;
-        border-radius: 5%;
-        border: 1px solid #000813;
-        padding: 0.75rem;
+        border-radius: 10%;
+        border: 1px solid rgba(10, 58, 82, 0.35);
+        padding: 0.40rem 0.75rem;
     }
 
     .key-highlights:hover {
         background-color: #0a3a52e3;
+    }
+
+    .video-titles {
+        background-color: rgba(0, 12, 18, 1);
+        border: 1px solid rgba(0, 12, 18, 1);
+        padding: 0.40rem 1.5rem;
+        width: fit-content;
     }
 
     .design {
@@ -153,8 +200,7 @@
     }
 
     .side-by-side {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        padding: 1.5rem .75rem;
     }
 
     /* SVG Brushed Divider Line Effect matching BREAKLINE.png */
@@ -199,9 +245,16 @@
         padding-left: 36px;
         text-indent: -36px;
         color: #e3dfd7;
+        text-align: left;
     }
 
     /* Smooth scroll anchor behavior */
     html {
         scroll-behavior: smooth;
+    }
+
+    footer {
+        padding: 2rem 0rem 1rem 0rem;
+        background-color: rgba(1, 15, 21, 0.8);
+        width: 100vw;
     }

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willville Artifact</title>
+    <!-- Google Fonts for custom typography matching sample -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:ital,wght@0,300..900;1,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex flex-col items-center px-4 py-4 md:px-16 md:py-16 bg-background-image">
+    <div class="bg-background-logo"></div>
+    <!-- Header & Hero Section -->
+    <header class="header-background w-full max-text-w-5xl text-center space-y-2">
+        <!-- Main Title -->
+        <h1 class="name-plate text-6xl md:text-7xl lg:text-8xl pt-2 pb-2">
+            Willville
+        </h1>
+    </header>
+    <!-- Navigation / Jump Bar -->
+    <nav class="navigation-background flex flex-wrap justify-center gap-4 md:gap-8 text-sm md:text-2xl">
+        <a href="./index.html" class="section-links section-links:hover">Main Page</a>
+        <a href="#Title" class="section-links section-links:hover">Willville</a>
+    </nav>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 min-h-screen w-full">
+        <div class="col-span-1 min-w-0 w-full bg-background-logo">
+
+        </div>
+        <!-- Main Artifacts Container -->
+        <main class="min-w-0 w-full col-span-2 pt-6 pb-6">
+            <!-- ARTIFACT ONE -->
+            <section id="artifact-4" class="scroll-mt-8 space-y-6 text-center">
+                <h4 class="artifact-title text-3xl md:text-4xl lg:text-5xl">
+                    A Narrative 3D Adventure Slice
+                </h4>
+                <p
+                    class="max-w-4xl mx-auto text-base md:text-xl text-slate-200 leading-relaxed font-normal text-left md:text-center px-2">
+                    Willville is a project that I started for Synty Game Jam that I have continued to iterate into a
+                    narrative demo. This project was my first time using Pixel Crushers Dialogue Manager, and I wanted
+                    to
+                    have a sample that showcase my ability to construct overlapping storylines. In Willville, I am able
+                    to
+                    utilize minigames and NPC dialoguea to build a story about a small town Mayor trying to finish last
+                    minute items before a town celebration. Constructing this narrative required quest mapping, dialogue
+                    trees, and generating responsive bark dialogue to enhance the player experience. The updated video
+                    will
+                    also show the growth in building out scene lighting and terrain costruction despite the more limited
+                    WebGL build. Building Willville required a fair number of C# scripts to make the minigames and quest
+                    system align, but with this structure it can also be easily expanded into longer play experience.
+                </p>
+
+                <!-- Itch Embed Link-->
+                <div class="center-container pt-6">
+                    <iframe frameborder="0" src="https://itch.io/embed/4612907?border_width=5&amp;dark=true" width="560"
+                        height="175"><a href="https://mwc670.itch.io/willville-demo">Willville by MWC</a></iframe>
+                </div>
+
+                <!-- Embedded Side-by-Side Video Showcase Container -->
+                <div class="side-by-side">
+                    <h5 class="text-2xl font-semibold text-brand-accent mb-4 uppercase tracking-widest text-center">
+                        Willville Side-by-Side
+                    </h5>
+
+                    <!-- Side-by-Side Flex Grid for YouTube Embeds -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+
+                        <!-- Video Embed 1 -->
+                        <div class="space-y-2">
+                            <div class="video-embed-container">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/74sJ4R8Ja2Q?si=s56eSgsDoEk3l4ap"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <p class="text-xs text-slate-400 italic text-center">Updated Version of Willville</p>
+                        </div>
+
+                        <!-- Video Embed 2 -->
+                        <div class="space-y-2">
+                            <div class="video-embed-container">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/LY0d_m3OZ4A?si=1VG9BLNXQBxIshi3"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <p class="text-xs text-slate-400 italic text-center">Older Version of Willville</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Key Highlights List for Willville -->
+                <div class="key-highlights key-highlights:hover text-left max-w-3xl mx-auto mt-6 space-y-3">
+                    <h5 class="text-2xl font-bold text-#fcf1dc mb-2 flex items-center justify-center gap-2">
+                        <span class="text-brand-accent">✦</span>
+                        <span class="design">Design Highlights</span>
+                        <span class="text-brand-accent">✦</span>
+                    </h5>
+                    <ul class="hanging-indent list-disc list-inside space-y-2 text-md md:text-lg">
+                        <li><strong class="text-white">NPC Dialogue:</strong> Building responsive dialogue
+                            trees and barks
+                            to make the NPCs more aware of player actions.</li>
+                        <li><strong class="text-white">Minigame Design:</strong> Create engaging short game
+                            loops that
+                            connect to key characters and build on story.</li>
+                        <li><strong class="text-white">Quest Tracking/UI:</strong> Construct a UI that
+                            updates the player on
+                            quest progression and ultimate goal.</li>
+                    </ul>
+                </div>
+
+            </section>
+        </main>
+        <div class="min-w-0 w-full col-span-1 bg-background-logo">
+
+        </div>
+    </div>
+</body>
+
+<!-- Footer -->
+<footer class="text-center text-xs md:text-sm space-y-2">
+    <p>&copy; 2026 Matthew Campbell. All rights reserved.</p>
+    <p>Built for MWC Level Design Portfolio.</p>
+</footer>
+
+</html>
