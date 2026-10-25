@@ -28,7 +28,12 @@
     </header>
     <!-- Navigation / Jump Bar -->
     <nav class="navigation-background flex flex-wrap justify-center gap-4 md:gap-8 text-sm md:text-2xl">
+
+        <!--Main Page Separate Page-->
         <a href="./index.html" class="section-links section-links:hover">Main Page</a>
+        <!-- About Me Separate Page-->
+        <a href="./AboutMe.html" class="section-links section-links:hover">About Me</a>        
+        
         <!-- Dropdown Container using a class -->
         <div class="projects-dropdown relative inline-block">
 
@@ -75,7 +80,7 @@
                 <p
                     class="max-w-4xl mx-auto text-base md:text-xl text-slate-200 leading-relaxed font-normal text-left md:text-center px-2">
                     Little View, a short puzzler started in Unreal Engine as an entry to a 5-day Game Jam about a year
-                    ago, was originally a collaborative effort between me and my colleague Robin. My focus for this
+                    ago, was originally a collaborative effort between me and my colleague Robyn. My focus for this
                     artifact was to leverage elements of the game's environment as solutions for some cozy puzzles.
                     Picking this project back up in the past month, I have had to rely on a lot of the notes we pinned
                     for project ideas that had started to formulate but we were never able to bring to fruition. Fast
@@ -146,16 +151,17 @@
                     addition of a forceful wind element during the player's final approach), as well as the
                     implementation of ambient sounds to promote the cozy backyard vibe. One of the challenging aspects
                     to this refinement was building upon a structure that I had not originally designed, like the player
-                    character interaction system. To get the player character to respond correctly to some of my new
-                    game elements, I had to take some time to look through the existing code and see which parts I could
-                    improve upon and which parts I needed to build anew. Systems like the item pickup were easy enough
-                    to iterate on so that they could include some new collision boxes within the existing line trace
-                    setup, but systems like the save function needed to be overhauled to account for the new collection
-                    stat sets and key asset designs. I also spent time during this update generating more subtle visual
-                    cues for the player to follow certain pathways, saving direct text prompts for the moments when the
-                    player needed specific actions to proceed. Ultimately, between the enhanced visuals and the increase
-                    in challenges for the player, I think this project is better equipped to engage the player while
-                    still maintaining its cozy vibe.
+                    character interaction system. In order to get the player character to respond correctly to some of
+                    my new game elements, like the refined physics grab, I had to take some time to look through the
+                    existing code and see which parts I could improve upon and which parts I needed to build anew. Some
+                    functionalities, like the player item pickup, were easy enough to iterate on, in this case by
+                    including some additional collision boxes to coincide with the existing line trace setup, but some
+                    systems, like the save function, needed to be overhauled to account for things like the new
+                    collection sets and key asset designs. I also spent time during this update generating more subtle
+                    visual cues for the player to follow certain pathways, saving direct text prompts for the moments
+                    when the player needed specific actions to proceed. Ultimately, between the enhanced visuals and the
+                    increase in challenges for the player, I think this project is better equipped to engage the player
+                    while still maintaining its cozy vibe.
                 </p>
 
             </section>

@@ -30,7 +30,12 @@
 
     <!-- Navigation / Jump Bar -->
     <nav class="navigation-background flex flex-wrap justify-center gap-4 md:gap-8 text-sm md:text-2xl">
+
+        <!--Main Page Separate Page-->
         <a href="./index.html" class="section-links section-links:hover">Main Page</a>
+        <!-- About Me Separate Page-->
+        <a href="./AboutMe.html" class="section-links section-links:hover">About Me</a>        
+        
         <!-- Dropdown Container using a class -->
         <div class="projects-dropdown relative inline-block">
 
@@ -73,7 +78,7 @@
             <section id="artifact-4" class="scroll-mt-8 space-y-6 text-center">
 
                 <!-- Project Main Title -->
-                <h4 class="text-3xl md:text-4xl lg:text-5xl mb-0">
+                <h4 class="artifact-title text-3xl md:text-4xl lg:text-5xl">
                     A Stealth Level
                 </h4>
 
@@ -165,9 +170,13 @@
                     it still felt like a normal home layout and NPC and player movement would not feel strained. Another
                     challenge that I overcame was the rigid movement of several NPCs that were following a strict spline
                     pathway. My solution eventually came when I decided on an AI Movement system that focused on
-                    connections to other nearby NPCs rather than a predefined area. This was a big jump in providing a
-                    more natural motion that one would expect more from a party guest. Ultimately, this updated level
-                    design now better captures that silly escape mission I had always envisioned.
+                    connections to other nearby NPCs rather than a predefined area. Once I had the movement defined, the 
+                    next step was to register a better line of site to keep a level of fairness to the player moving through
+                    the scene. I had to test several different solutions, trialing various angle measures that would catch
+                    a peripheral glance without bending too far behind the NPC, until eventually I got to a system I felt 
+                    offered enough of a challenge while still feeling fair. All of this was a big jump in providing a
+                    more natural experience that a player would expect to get from an observant party guest. Ultimately, this 
+                    updated level design now better captures that silly escape mission I had always envisioned.
                 </p>
 
             </section>
