@@ -22,7 +22,7 @@
     <!-- Header & Hero Section -->
     <header class="header-background w-full max-text-w-5xl text-center space-y-2">
         <!-- Main Title -->
-        <h1 class="name-plate text-6xl md:text-7xl lg:text-8xl pt-2 pb-2">
+        <h1 class="name-plate text-7xl md:text-8xl lg:text-8xl pt-2 pb-2">
             Little View
         </h1>
     </header>
@@ -74,23 +74,14 @@
                 </h4>
                 <p
                     class="max-w-4xl mx-auto text-base md:text-xl text-slate-200 leading-relaxed font-normal text-left md:text-center px-2">
-                    Little View started as a simple GameJam project that has since blossomed into a short demo. My
-                    focus for this artifact was to leverage elements of the game's environment as solutions for a few
-                    cozy puzzles to demonstrate what I since learned about Unreal Engine's toolsets. The updated video
-                    shows
-                    how I started to advance in key aspects such as lighting, sequences, and interactive elements to
-                    engage
-                    the player better. This is evident in the opening and closing scenes, the moving dig piles, and the
-                    addition of a wind force for the final approach. One of the challenging aspects to this refinement
-                    was
-                    understanding the build process of a previous teammate that in the first interaction focused on the
-                    player character. Being able to build upon their previous structure so that I could get the player
-                    character to the level I needed for this playthrough took some time and adjustments to existing
-                    code,
-                    but I was able to effectively repurpose several of the interactions. Ultimately, my goal was to make
-                    this project more appealing to potential players, and I believe this overview will show that the
-                    update
-                    provides this enhancement:
+                    Little View, a short puzzler started in Unreal Engine as an entry to a 5-day Game Jam about a year
+                    ago, was originally a collaborative effort between me and my colleague Robin. My focus for this
+                    artifact was to leverage elements of the game's environment as solutions for some cozy puzzles.
+                    Picking this project back up in the past month, I have had to rely on a lot of the notes we pinned
+                    for project ideas that had started to formulate but we were never able to bring to fruition. Fast
+                    forward to my current work on the project, and now I am able to utilize my better understanding of
+                    collision and pick up systems, how materials can be altered for visual effects, and how focusing a
+                    little more on the player engagement side makes for a much more interesting project.
                 </p>
 
                 <!-- Embedded Side-by-Side Video Showcase Container -->
@@ -137,15 +128,35 @@
                         <span class="text-brand-accent">✦</span>
                     </h5>
                     <ul class="hanging-indent list-disc list-inside space-y-2 text-md md:text-lg">
-                        <li><strong class="text-white">Puzzle Construction:</strong> Using scene elements that require
-                            player interaction to find solutions.</li>
-                        <li><strong class="text-white">Visual Mapping:</strong> Using lighting and natural pathways to
-                            guide
-                            the player to subsequent areas without minimap.</li>
-                        <li><strong class="text-white">Cut Scenes:</strong> Generating opening and closing cut scenes to
-                            help provide narrative box for story.</li>
+                        <li><strong class="text-white">Puzzle Construction:</strong> Developed 3D environment that
+                            required
+                            player interaction to find solutions for each puzzle.</li>
+                        <li><strong class="text-white">Visual Mapping:</strong> Used directed lighting and natural
+                            pathways to
+                            guide the player to subsequent areas without a minimap.</li>
+                        <li><strong class="text-white">Cut Scenes:</strong> Crafted opening and closing cut scenes to
+                            help provide the narrative "box" for the story.</li>
                     </ul>
                 </div>
+                <p
+                    class="max-w-4xl mx-auto text-base md:text-xl text-slate-200 leading-relaxed font-normal text-left md:text-center px-2">
+                    The updated video above shows how I started to advance in key aspects such as scene lighting,
+                    sequences, and interactive elements to better engage the player. This is evident in my inclusion of
+                    opening and closing scenes, adding dynamic pieces where static ones had been used before (like the
+                    addition of a forceful wind element during the player's final approach), as well as the
+                    implementation of ambient sounds to promote the cozy backyard vibe. One of the challenging aspects
+                    to this refinement was building upon a structure that I had not originally designed, like the player
+                    character interaction system. To get the player character to respond correctly to some of my new
+                    game elements, I had to take some time to look through the existing code and see which parts I could
+                    improve upon and which parts I needed to build anew. Systems like the item pickup were easy enough
+                    to iterate on so that they could include some new collision boxes within the existing line trace
+                    setup, but systems like the save function needed to be overhauled to account for the new collection
+                    stat sets and key asset designs. I also spent time during this update generating more subtle visual
+                    cues for the player to follow certain pathways, saving direct text prompts for the moments when the
+                    player needed specific actions to proceed. Ultimately, between the enhanced visuals and the increase
+                    in challenges for the player, I think this project is better equipped to engage the player while
+                    still maintaining its cozy vibe.
+                </p>
 
             </section>
         </main>

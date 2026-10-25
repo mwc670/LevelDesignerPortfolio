@@ -22,7 +22,7 @@
     <!-- Header & Hero Section -->
     <header class="header-background w-full max-text-w-5xl text-center space-y-2">
         <!-- Main Title -->
-        <h1 class="name-plate text-6xl md:text-7xl lg:text-8xl pt-2 pb-2">
+        <h1 class="name-plate text-7xl md:text-8xl lg:text-8xl pt-2 pb-2">
             Willville
         </h1>
     </header>
@@ -73,26 +73,16 @@
                     A Narrative 3D Adventure Slice
                 </h4>
                 <p
-                    class="max-w-4xl mx-auto text-base md:text-xl text-slate-200 leading-relaxed font-normal text-left md:text-center px-2">
-                    Willville is a project that I started for Synty Game Jam that I have continued to iterate into a
-                    narrative demo. This project was my first time using Pixel Crushers Dialogue Manager, and I wanted
-                    to
-                    have a sample that showcase my ability to construct overlapping storylines. In Willville, I am able
-                    to
-                    utilize minigames and NPC dialoguea to build a story about a small town Mayor trying to finish last
-                    minute items before a town celebration. Constructing this narrative required quest mapping, dialogue
-                    trees, and generating responsive bark dialogue to enhance the player experience. The updated video
-                    will
-                    also show the growth in building out scene lighting and terrain costruction despite the more limited
-                    WebGL build. Building Willville required a fair number of C# scripts to make the minigames and quest
-                    system align, but with this structure it can also be easily expanded into longer play experience.
-                </p>
-
-                <!-- Itch Embed Link-->
-                <div class="center-container pt-6">
-                    <iframe frameborder="0" src="https://itch.io/embed/4612907?border_width=5&amp;dark=true" width="560"
-                        height="175"><a href="https://mwc670.itch.io/willville-demo">Willville by MWC</a></iframe>
-                </div>
+                    class="max-w-4xl mx-auto text-base md:text-xl leading-relaxed font-normal text-left md:text-center px-2">
+                    Willville is a low-poly narrative 3D vertical slice I built with Unity during a Synty GameJam a few
+                    months
+                    ago. This project utilizes minigames and NPC dialogues to advance a story about a small-town Mayor
+                    hoping to finish some last-minute tasks before a town celebration. Constructing this project
+                    required precise quest mapping, dialogue trees, and a volume of responsive NPC barks to bring the
+                    small town to life. Something I implemented for the first time with this project was Pixel Crushers
+                    Dialogue Manager, which was key in my ability to hold overlapping storylines together with a
+                    cohesive quest structure. The choice to make this project a WebGL build has also led me to learn a
+                    lot more about C# scripts, LODs refinement, and cross level loading. </p>
 
                 <!-- Embedded Side-by-Side Video Showcase Container -->
                 <div class="side-by-side">
@@ -131,23 +121,48 @@
                 </div>
 
                 <!-- Key Highlights List for Willville -->
-                <div class="key-highlights key-highlights:hover text-left max-w-3xl mx-auto mt-6 space-y-3">
+                <div class="key-highlights key-highlights:hover text-left max-w-3xl mx-auto mt-6 space-y-3 pb-6">
                     <h5 class="text-2xl font-bold text-#fcf1dc mb-2 flex items-center justify-center gap-2">
                         <span class="text-brand-accent">✦</span>
                         <span class="design">Design Highlights</span>
                         <span class="text-brand-accent">✦</span>
                     </h5>
                     <ul class="hanging-indent list-disc list-inside space-y-2 text-md md:text-lg">
-                        <li><strong class="text-white">NPC Dialogue:</strong> Building responsive dialogue
-                            trees and barks
-                            to make the NPCs more aware of player actions.</li>
-                        <li><strong class="text-white">Minigame Design:</strong> Create engaging short game
-                            loops that
-                            connect to key characters and build on story.</li>
-                        <li><strong class="text-white">Quest Tracking/UI:</strong> Construct a UI that
-                            updates the player on
-                            quest progression and ultimate goal.</li>
+                        <li><strong class="text-white">NPC Dialogue:</strong> Built responsive dialogue
+                            trees and barks directed at the player to make the town feel more aware of player's actions.
+                        </li>
+                        <li><strong class="text-white">Minigame Designs:</strong> Created engaging short game
+                            loops that progress NPC stories and connect to the overarching quest line.</li>
+                        <li><strong class="text-white">Quest Tracking/UI:</strong> Constructed UIs that
+                            update the player on each quest's progression level in both a journal format and corner
+                            screen tracker.</li>
                     </ul>
+                </div>
+
+                <p
+                    class="max-w-4xl mx-auto text-base md:text-xl text-slate-200 leading-relaxed font-normal text-left md:text-center px-2">
+                    One of the key challenges in constructing Willville was planning the scope of a build that would
+                    stay playable in a WebGL format. As the side-by-side videos show, I was able to find a balance in
+                    things like the scene lighting and terrain that could still provide an enhanced atmosphere while
+                    keeping the settings within the necessary limitations. When I started crafting out the minigames and
+                    NPC interactions for Willville, it became clear that I needed to be mindful of the Dialogue Manager
+                    from PixelCrushers quest tracking, so each game was given its own game manager script to make sure
+                    that quests were progressing correctly and that the player's quest journal was accurately reporting
+                    this information to the player. Inside of the minigames, the movement and the physics of the objects
+                    needed to be measured for this system as well. Creating logic for the clouds in Cloud Chaser took
+                    some time to balance the fleeing from the player with the randomness they were promoted as having,
+                    but the more difficult experience for me was crafting the dart toss for the Dart Board challenge.
+                    Finding a way to show the dart traversing to the board without making the game unnecessarily
+                    difficult ultimately led to me creating a safe zone that would become the "called shot" system. In
+                    the end, I was able to improve this project by significantly expanding its main quest line,
+                    improving the carryover of data between scene loads, revamping the lighting, terrain, audio, and
+                    minigames as well as crafting a final cut scene. You can try out the slice below: 
+                </p>
+
+                <!-- Itch Embed Link-->
+                <div class="center-container pt-2 pb-4">
+                    <iframe frameborder="0" src="https://itch.io/embed/4612907?border_width=5&amp;dark=true" width="560"
+                        height="175"><a href="https://mwc670.itch.io/willville-demo">Willville by MWC</a></iframe>
                 </div>
 
             </section>
